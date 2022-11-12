@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google" value="notranslate">
+    <title>编程加加</title>
+    <link rel="shortcut icon" href="/img/nologo.png">
+</head>
+
+<body>
+  <style>
+    #loading-word {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #FFFFFF;
+        height: 100vh;
+        width: 100%;
+        z-index: 9999;
+    }
+    #container-exibition-text {
+        margin: 300px 0 0 0;
+        font-size: 30px;
+        text-align: center;
+    }
+    #container-exibition-text>div {
+        background-color: #FF7722;
+        margin: 1px;
+        color: #fff;
+        padding: 12px;
+        border-radius: 4px;
+        box-shadow: 1px 1px 9px -3px #000;
+        display: inline-block;
+    
+        animation-duration: 1s;
+        animation-fill-mode: both;
+        animation-iteration-count: infinite;
+    
+        animation-name: style1;
+    }
+        
+    @keyframes style1 {
+        from, 20%, 53%, 80%, to {
+          animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+          transform: translate3d(0,0.5,0.1);
+        }
+        40%, 43% {
+          animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+          transform: translate3d(0px, -35px, 0);
+        }
+    }
+  </style>
+  
+  <div id="loading-word">
+    <div id="container-exibition-text">
+      <div style="margin:0 5px;animation-delay: 0.0s;">少</div>
+      <div style="margin:0 5px;animation-delay: 0.1s;">儿</div>
+      <div style="margin:0 5px;animation-delay: 0.2s;">编</div>
+      <div style="margin:0 5px;animation-delay: 0.3s;">程</div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    window.onload = function(){
+      document.getElementById("loading-word").hidden = true;
+    };
+
+    var _scratch_logo= '/img/nologo.png';
+  </script>
+
+</body>
+<script type="text/javascript" src="/js/scratch.min.js"></script>
+<script type="text/javascript" src123="/js/scratch.lib.js"></script>
+</html>
